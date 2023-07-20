@@ -3,6 +3,10 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+
+use App\Http\Controller\Simple;
+
+Route::get('/data', [Simple::class, 'index']);
 /*
 |--------------------------------------------------------------------------
 | API Routes
